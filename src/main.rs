@@ -1,5 +1,10 @@
-use sprs::linalg::bicgstab;
+use nalgebra_sparse::{na::DVector, CsrMatrix};
+use nalgebra_sparse_linalg::iteratives::conjugate_gradient::solve;
+
 use sprs::{CsMat, CsVec, TriMat};
+
+use sprs::linalg::bicgstab;
+use nalgebra::CsMat;
 
 use plotters::prelude::*;
 
